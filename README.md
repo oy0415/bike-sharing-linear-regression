@@ -72,6 +72,7 @@ Bike Sharing データを用いて、**気温 (`temp`) が自転車利用者数 
 ### 3. 残差診断
 
 単回帰モデルの残差プロットを確認すると、LOWESS 線がやや**山なりに曲がる**傾向が見られました。
+![regression_plot](results/regression_plot.png)
 
 #### 解釈
 - 大きな破綻があるとは言えない
