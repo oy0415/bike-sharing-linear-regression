@@ -189,8 +189,12 @@ bike-sharing-linear-regression/
 │   └── model.py           ← 回帰モデルのコード
 │
 └──  results/
-     ├── residual_plot.png
-     ├── qq_plot.png
-     └── scale_location.png
+     ├── qq_plot1.png
+     ├── qq_plot2.png
+     ├── regression_plot.png
+     ├── residual_plot1.png
+     ├── residual_plot2.png
+     ├── scale_location1.png
+     └── scale_location2.png
 
  
