@@ -61,6 +61,8 @@ Bike Sharing データを用いて、**気温 (`temp`) が自転車利用者数 
 - 決定係数 \( R^2 \): **0.394**
 - 調整済み決定係数: **0.393**
 
+![regression_plot](results/regression_plot.png)
+
 #### 解釈
 - `temp` の係数が正であることから、**気温が上がると利用者数が増加する傾向**がある
 - p値が非常に小さいことから、**気温は利用者数に対して統計的に有意な説明変数**である
@@ -72,7 +74,7 @@ Bike Sharing データを用いて、**気温 (`temp`) が自転車利用者数 
 ### 3. 残差診断
 
 単回帰モデルの残差プロットを確認すると、LOWESS 線がやや**山なりに曲がる**傾向が見られました。
-![regression_plot](results/regression_plot.png)
+![residual_plot1](results/residual_plot1.png)
 
 #### 解釈
 - 大きな破綻があるとは言えない
@@ -101,6 +103,7 @@ Bike Sharing データを用いて、**気温 (`temp`) が自転車利用者数 
 また、残差プロットでは、2次項を加えることで **LOWESS 線がより 0 付近に近づき**、一次モデルで見られた山なりの傾向が弱まりました。  
 このことから、`temp` と `cnt` の関係は、**一次式だけでなく2次の関係も考慮した方が適切**である可能性があります。
 
+![residual_plot2](results/residual_plot2.png)
 ---
 
 ### 5. AIC によるモデル比較
@@ -123,10 +126,15 @@ AIC による比較結果は次の通りです。
 Q-Q plot を確認すると、**2次項を入れたモデルの方が点が正規直線の周辺により集まっている**ことが分かりました。  
 差は大きくないものの、**残差の正規性という点では2次項ありモデルの方がわずかに良い**と考えられます。
 
+![qq_plot1](results/qq_plot1.png) 
+![qq_plot2](results/qq_plot2.png)
+---
 #### Scale-Location Plot
 Scale-Location Plot を確認すると、2次項を組み込んだモデルでは **LOWESS 線の傾きがやや大きく**なっていました。  
 一方で、図全体を見る限り、**y軸方向の点の散らばりは一次モデルと大きくは変わらない**ため、**等分散性が明確に改善したとは言いにくい**です。
 
+![scale_location1](results/scale_location1.png)
+![scale_location2](results/scale_location2.png)
 ---
 
 ## 結論
