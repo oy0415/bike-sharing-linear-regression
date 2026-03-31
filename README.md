@@ -183,7 +183,7 @@ bike-sharing-linear-regression/
 │   └── analysis.ipynb     ← 分析ノート（可視化・検証）
 │
 ├── src/
-│   └── model.py           ← 回帰モデルのコード（整理版）
+│   └── model.py           ← 回帰モデルのコード
 │
 ├── results/
 │   ├── residual_plot.png
