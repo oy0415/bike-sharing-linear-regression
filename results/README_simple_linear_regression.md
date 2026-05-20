@@ -1,4 +1,4 @@
-# Bike Sharing Linear Regression
+# Bike Sharing Simple Linear Regression
 ---
 ## 要約
 **目的** : 気温が自転車利用者数に与える影響を回帰分析で検証する\
