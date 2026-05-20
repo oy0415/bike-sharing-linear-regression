@@ -197,23 +197,37 @@
 ## ファイル構成
 
 ```text
-bike-sharing-multiple-linear-regression/
-│
+bike-sharing-linear-regression/
 ├── README.md
 ├── requirements.txt
+├── LICENSE
+├── .gitignore
 │
 ├── data/
 │   └── day.csv
 │
 ├── notebooks/
-│   └── 02_multiple_linear_regression.ipynb
+│   ├── 01_simple_linear_regression.ipynb.ipynb
+│   ├── 02_multiple_linear_regression.ipynb.ipynb
+│   └── day.csv
 │
 ├── src/
+│   ├── modeling.py
 │   ├── preprocessing.py
-│   └── modeling.py
+│   └── __pycache__/
+│
+├── images/
+│   ├── qq_plot1.png
+│   ├── qq_plot2.png
+│   ├── regression_plot.png
+│   ├── residual_plot1.png
+│   ├── residual_plot2.png
+│   ├── scale_location1.png
+│   └── scale_location2.png
 │
 └── results/
-    └── figures/
+    ├── README_simple_linear_regression.md
+    └── README_multiple_linear_regression.md
 ```
 
 ---
